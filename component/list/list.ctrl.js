@@ -6,5 +6,10 @@ angular.module('studentApp').controller('studentCtrl', function($scope,$state ,$
 
     $scope.sortField = 'id';
     $scope.reverse = true;
+
+    $scope.changeView = function ( ) {
+        $state.go('add')
+    };
+
 });
 

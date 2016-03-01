@@ -9,4 +9,9 @@ angular.module('studentApp').config(function($stateProvider, $urlRouterProvider)
         templateUrl: 'component/list/list.html',
         controller: 'studentCtrl'
       })
+      .state('add', {
+          url: '/add',
+          templateUrl: 'component/add/add.html',
+          controller: 'addCtrl'
+      })
 });
